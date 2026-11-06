@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:layout_width="match_parent" android:layout_height="match_parent" android:orientation="vertical" android:background="@color/white">
+    <com.google.android.material.appbar.MaterialToolbar android:id="@+id/toolbar" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="56dp" app:title="AdoPet" app:titleTextColor="@color/ink" app:titleTextAppearance="@style/TextAppearance.MaterialComponents.Headline5" />
+    <ScrollView android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1" android:fillViewport="true">
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical" android:padding="16dp">
+            <com.google.android.material.button.MaterialButton android:id="@+id/btnAccount" style="@style/Widget.MaterialComponents.Button.OutlinedButton" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Entrar / Criar conta" android:textAllCaps="false" />
+            <ImageView android:layout_width="145dp" android:layout_height="145dp" android:src="@drawable/foto_adopet" android:scaleType="fitCenter" android:contentDescription="Logotipo original AdoPet" />
+            <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Encontre seu novo melhor amigo!" android:textSize="16sp" android:textColor="@color/muted" android:layout_marginTop="8dp" android:layout_marginBottom="12dp" />
+            <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal" android:gravity="center_vertical">
+                <TextView android:id="@+id/titleCount" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:text="Pets disponíveis" android:textColor="@color/muted" android:textSize="14sp" />
+                <com.google.android.material.button.MaterialButton android:id="@+id/btnFilter" style="@style/Widget.MaterialComponents.Button.OutlinedButton" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Filtrar" android:textAllCaps="false" />
+            </LinearLayout>
+            <GridLayout android:id="@+id/petList" android:layout_width="match_parent" android:layout_height="wrap_content" android:columnCount="2" android:alignmentMode="alignMargins" />
+            <com.google.android.material.button.MaterialButton android:id="@+id/fabAdd" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="48dp" android:layout_marginTop="16dp" android:text="Cadastrar pet" android:textAllCaps="false" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

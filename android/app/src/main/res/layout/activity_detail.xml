@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:layout_width="match_parent" android:layout_height="match_parent" android:orientation="vertical" android:background="@color/cream">
+    <com.google.android.material.appbar.MaterialToolbar android:id="@+id/toolbar" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="64dp" android:background="@color/white" app:navigationIcon="@drawable/abc_ic_ab_back_material" app:title="Detalhes do animal" app:titleTextColor="@color/ink" app:navigationIconTint="@color/ink" />
+    <ScrollView android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1">
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical">
+            <ImageView android:id="@+id/petImage" android:layout_width="match_parent" android:layout_height="230dp" android:src="@android:drawable/ic_menu_gallery" android:scaleType="centerCrop" android:background="#F5F5F5" android:contentDescription="Imagem ilustrativa do animal" />
+            <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical" android:padding="20dp">
+                <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal" android:gravity="center_vertical">
+                    <TextView android:id="@+id/petName" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:textSize="30sp" android:textStyle="bold" android:textColor="@color/ink" />
+                    <TextView android:id="@+id/petStatus" android:layout_width="wrap_content" android:layout_height="wrap_content" android:background="@drawable/bg_status" android:textStyle="bold" android:textColor="@color/green_dark" />
+                </LinearLayout>
+                <TextView android:id="@+id/petSummary" android:layout_width="match_parent" android:layout_height="wrap_content" android:textSize="16sp" android:textColor="@color/muted" android:paddingTop="5dp" />
+                <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Sobre o animal" android:textSize="20sp" android:textStyle="bold" android:textColor="@color/ink" android:paddingTop="22dp" />
+                <TextView android:id="@+id/petDescription" android:layout_width="match_parent" android:layout_height="wrap_content" android:textSize="16sp" android:textColor="@color/ink" android:lineSpacingExtra="4dp" android:paddingTop="6dp" />
+                <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Saúde e cuidados" android:textSize="20sp" android:textStyle="bold" android:textColor="@color/ink" android:paddingTop="22dp" />
+                <TextView android:id="@+id/petHealth" android:layout_width="match_parent" android:layout_height="wrap_content" android:textSize="16sp" android:textColor="@color/ink" android:paddingTop="6dp" />
+                <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Responsável" android:textSize="20sp" android:textStyle="bold" android:textColor="@color/ink" android:paddingTop="22dp" />
+                <TextView android:id="@+id/petGuardian" android:layout_width="match_parent" android:layout_height="wrap_content" android:textSize="16sp" android:textColor="@color/ink" android:paddingTop="6dp" />
+                <com.google.android.material.button.MaterialButton android:id="@+id/btnAdopt" android:layout_width="match_parent" android:layout_height="56dp" android:layout_marginTop="24dp" android:text="Quero adotar" app:backgroundTint="@color/orange" android:textColor="@color/ink" />
+                <com.google.android.material.button.MaterialButton android:id="@+id/btnInterests" style="@style/Widget.MaterialComponents.Button.OutlinedButton" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Interesses registrados" />
+                <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal" android:layout_marginTop="8dp">
+                    <com.google.android.material.button.MaterialButton android:id="@+id/btnEdit" style="@style/Widget.MaterialComponents.Button.OutlinedButton" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:text="Editar" android:textColor="@color/green_primary" app:strokeColor="@color/green_primary" />
+                    <com.google.android.material.button.MaterialButton android:id="@+id/btnDelete" style="@style/Widget.MaterialComponents.Button.TextButton" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:text="Excluir" android:textColor="#B3261E" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
