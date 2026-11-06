@@ -1,0 +1,6 @@
+Emulador Pixel 7, Android API 37. APK 3.0-local.
+Build Android Studio: BUILD SUCCESSFUL.
+Runner: com.adopet.app.test.LocalInstrumentation
+OK: SQLite local, CRUD, filtro Outro, persistência, login, perfis, propriedade,
+validações, duplicidade, histórico, migração e integridade.
+TODOS OS TESTES PASSARAM
