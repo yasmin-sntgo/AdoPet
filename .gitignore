@@ -1,0 +1,14 @@
+# Arquivos locais e gerados
+.gradle/
+.idea/
+.kotlin/
+**/build/
+local.properties
+*.iml
+*.jks
+*.keystore
+.env
+.env.*
+*.db
+*.db-shm
+*.db-wal
