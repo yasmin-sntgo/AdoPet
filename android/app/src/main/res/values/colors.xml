@@ -1,0 +1,10 @@
+<resources>
+    <color name="green_primary">#247747</color>
+    <color name="green_dark">#18543C</color>
+    <color name="green_light">#DFF3E9</color>
+    <color name="cream">#FFFFFF</color>
+    <color name="orange">#F2A65A</color>
+    <color name="ink">#222222</color>
+    <color name="muted">#555555</color>
+    <color name="white">#FFFFFF</color>
+</resources>
