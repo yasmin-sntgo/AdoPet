@@ -5,8 +5,6 @@ Desenvolvido em Kotlin, com armazenamento local em SQLite.
 
 **Integrantes:** Livia Beatriz, Vinicius Eduardo e Yasmin Santiago.
 
-![AdoPet](apresentacao/Capa.png)
-
 ## Funcionalidades
 
 - Catálogo com filtros por espécie, porte, sexo e disponibilidade.
@@ -48,7 +46,7 @@ Também é possível criar uma nova conta local e cadastrar seus próprios anima
 | android | Projeto Android Studio, código Kotlin e layouts XML |
 | android/app/src/main/java/com/adopet/app/DatabaseHelper.kt | Banco, validações, contas e operações |
 | android/app/src/androidTest | Testes de instrumentação em bancos separados |
-| apresentacao | Slides, PDF, guia de estudo e roteiro |
+| apresentacao | Guia de estudo e roteiro da apresentação |
 | AdoPet.apk | Aplicativo compilado para demonstração |
 
 O banco `adopet.db` contém as tabelas `users`, `animals` e `interests`.
@@ -67,10 +65,10 @@ remove o banco local. O interesse não conclui a adoção.
 
 ## Apresentação
 
-- [PowerPoint editável](apresentacao/AdoPet-Apresentacao.pptx)
-- [Slides em PDF](apresentacao/AdoPet-Apresentacao.pdf)
 - [Roteiro](apresentacao/ROTEIRO-APRESENTACAO.md)
 - [Guia das funcionalidades e persistência](apresentacao/GUIA-YASMIN.md)
+
+Os slides editáveis foram organizados no Canva.
 
 ## Imagens
 
